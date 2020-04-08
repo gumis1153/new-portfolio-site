@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <title>Piotr Jakubowski | Junior Frontend Developer</title>
+  </head>
+
+  <body>
+    <section id="home">
+      <button id="back-arrow" value="home">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+      <div class="bgc-blur">
+        <header>
+          <div class="mobile-nav-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <button class="app-btn app-btn-nav app-btn--anim" value="about">
+                  About me
+                </button>
+              </li>
+              <li>
+                <button
+                  class="app-btn app-btn-nav app-btn--anim"
+                  value="skills"
+                >
+                  Skills
+                </button>
+              </li>
+              <li>
+                <button
+                  class="app-btn app-btn-nav app-btn--anim"
+                  value="portfolio"
+                >
+                  Portfolio
+                </button>
+              </li>
+              <li>
+                <button
+                  class="app-btn app-btn-nav app-btn--bgc"
+                  value="hire-me"
+                >
+                  Hire me
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="app-wrapper">
+          <div class="home-info">
+            <div class="home-info-greet">
+              <h2>Hello, I'm</h2>
+              <h1>Piotr <br />Jakubowski</h1>
+              <h2>Junior Frontend Developer</h2>
+            </div>
+            <div class="home-info-socials">
+              <a href="https://www.facebook.com/piotr.jakubowski.758">
+                <div><i class="fab fa-facebook-f"></i></div>
+              </a>
+              <a href="https://www.linkedin.com/in/piotr-jakubowski-aa0ba2137/">
+                <div><i class="fab fa-linkedin-in"></i></div>
+              </a>
+              <a href="https://github.com/gumis1153">
+                <div><i class="fab fa-github"></i></div>
+              </a>
+            </div>
+            <div class="home-info-actions">
+              <button class="app-btn app-btn--bgc" value="hire-me">
+                Hire me
+              </button>
+              <a href="./assets/cv.pdf" class="app-btn app-btn--primary">
+                See my resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="app-wrapper">
+        <div class="about-header">
+          <h2 class="about-h2">About me</h2>
+          <h2 class="about-h2 about-h2--primary">Who am I</h2>
+        </div>
+        <div class="about-img"></div>
+        <p>
+          My name is Piotr. I am a food and mountine lover. For me, a day
+          without music, is a wasted day. I am a beginning developer of web
+          technologies. Right now, I am searching for my first developer job,
+          where I will be able to improve my hard and soft skills. My basic set
+          consist of HTML, CSS/SASS, JavaScript, React in VSC IDE. As of my
+          experience, I have created multiple websites and a few minor web apps.
+          I also have a basic knowledge about Adobe Creative and UX tools. In my
+          free time, I try to develop my skillset using online courses. Whenever
+          I find an obstacle while working on the project. I always search for
+          the solution in the technical documentation or trusted internet
+          websites. I’m doing my best to be self sufficient. I would say my
+          English level is between B1 and B2 at the moment, but I haven’t used
+          it for a while since my current job doesn’t require that.
+        </p>
+        <div class="home-info-actions">
+          <button class="app-btn app-btn--reverse" value="hire-me">
+            Hire me
+          </button>
+          <a href="./assets/cv.pdf" class="app-btn app-btn--reverse-bgc">
+            See my resume
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="app-wrapper">
+        <div class="skills-header">
+          <h2>Skills</h2>
+          <span>Couple technologies I used to</span>
+        </div>
+        <div class="skill-list">
+          <div>
+            <div><i class="fab fa-html5"></i><span>HTML5</span></div>
+            <div><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+            <div><i class="fab fa-css3-alt"></i><span>SCSS</span></div>
+            <div><i class="fab fa-js"></i><span>JavaScript</span></div>
+            <div><i class="fab fa-react"></i><span>React</span></div>
+            <div><i class="fab fa-github"></i><span>GIT</span></div>
+            <div><i class="fab fa-npm"></i><span>NPM</span></div>
+            <div><i class="fas fa-file-code"></i><span>REST</span></div>
+            <div>
+              <img src="./assets/icons/rwd.png" alt="RWD" /><span>RWD</span>
+            </div>
+            <div>
+              <img
+                src="./assets/icons/creative-cloud.png"
+                alt="Creative Cloud"
+              /><span>Adobe</span>
+            </div>
+          </div>
+          <span>And keep growing</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="app-wrapper">
+        <div class="portfolio-header"><h2>Porftolio</h2></div>
+        <div class="portfolio-list">
+          <div class="portfolio-container">
+            <div>
+              <img
+                src="./assets/images/bramgaz.jpg"
+                alt="Landing page of local firm"
+              />
+            </div>
+            <div class="portfolio-description">
+              <span>Landing page of local firm</span>
+              <span class="portfolio-technologies"
+                >Gatsby | JavaScript | CSS | GraphQL | API</span
+              >
+              <div>
+                <a class="app-btn app-btn--bgc" href="https://bramgaz.pl/"
+                  >Live</a
+                ><a
+                  class="app-btn app-btn--primary"
+                  href="https://github.com/gumis1153/bramgaz-site"
+                  >Git</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-container">
+            <div>
+              <img
+                src="./assets/images/old-portfolio.jpg"
+                alt="My old portfolio site"
+              />
+            </div>
+            <div class="portfolio-description">
+              <span>My old portfolio site</span>
+              <span class="portfolio-technologies">HTML | CSS | JS</span>
+              <div>
+                <a
+                  class="app-btn app-btn--bgc"
+                  href="https://piotrjakubowski.pl/old"
+                  >Live</a
+                ><a
+                  class="app-btn app-btn--primary"
+                  href="https://github.com/gumis1153/portfolio"
+                  >Git</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-container">
+            <div>
+              <img
+                src="./assets/images/new-portfolio.jpg"
+                alt="My new portfolio site"
+              />
+            </div>
+            <div class="portfolio-description">
+              <span>My new portfolio site</span>
+              <span class="portfolio-technologies"
+                >HTML | SASS | Vanilla JS</span
+              >
+              <div>
+                <a
+                  class="app-btn app-btn--primary"
+                  href="https://github.com/gumis1153/portfolio"
+                  >Git</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-container">
+            <div>
+              <img src="./assets/images/landing.jpg" alt="Landing page" />
+            </div>
+            <div class="portfolio-description">
+              <span>Landing page</span>
+              <span class="portfolio-technologies">HTML | CSS | JS</span>
+              <div>
+                <a
+                  class="app-btn app-btn--bgc"
+                  href="https://piotrjakubowski.pl/massage/"
+                  >Live</a
+                ><a
+                  class="app-btn app-btn--primary"
+                  href="https://github.com/gumis1153/landingpage-massage"
+                  >Git</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-container">
+            <div>
+              <img src="./assets/images/fetch.jpg" alt="Fetched data" />
+            </div>
+            <div class="portfolio-description">
+              <span>Fetch clients</span>
+              <span class="portfolio-technologies">React | JS | API</span>
+              <div>
+                <a
+                  class="app-btn app-btn--bgc"
+                  href="https://piotrjakubowski.pl/fetch/index.html"
+                  >Live</a
+                ><a
+                  class="app-btn app-btn--primary"
+                  href="https://github.com/gumis1153/FetchClients"
+                  >Git</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-container">
+            <div>
+              <img src="./assets/images/weatherapp.png" alt="Weather app" />
+            </div>
+            <div class="portfolio-description">
+              <span>Weather App</span>
+              <span class="portfolio-technologies"
+                >CSS | HTML | React | API
+              </span>
+              <div>
+                <a
+                  class="app-btn app-btn--bgc"
+                  href="https://piotrjakubowski.pl/weather-app/"
+                  >Live</a
+                ><a
+                  class="app-btn app-btn--primary"
+                  href="https://github.com/gumis1153/WeatherApp."
+                  >Git</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-container">
+            <div>
+              <img src="./assets/images/calculator.jpg" alt="Calculator" />
+            </div>
+            <div class="portfolio-description">
+              <span>Simple calculator</span>
+              <span class="portfolio-technologies">HTML | CSS | JS</span>
+              <div>
+                <a
+                  class="app-btn app-btn--bgc"
+                  href="https://piotrjakubowski.pl/calculator/"
+                  >Live</a
+                ><a
+                  class="app-btn app-btn--primary"
+                  href="https://github.com/gumis1153/simple-calculator"
+                  >Git</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="hire-me">
+      <div class="hire-me-header"><h2>Hire me</h2></div>
+      <div class="app-wrapper">
+        <form action="https://formspree.io/mgelabda" method="POST">
+          <h2>Message</h2>
+          <label for="name"
+            >Name <input id="name" name="name" type="text" required
+          /></label>
+          <label for="email"
+            >Your mail <input id="email" name="email" type="email" required
+          /></label>
+          <label for="message"
+            >Message
+            <textarea
+              id="message"
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </label>
+          <button id="submit" class="app-btn app-btn--reverse" type="submit">
+            Send
+          </button>
+        </form>
+        <div class="hire-me-socials">
+          <h2>Socials</h2>
+          <div>
+            <a href="https://www.facebook.com/piotr.jakubowski.758">
+              <div><i class="fab fa-facebook-f"></i></div>
+            </a>
+            <a href="https://www.linkedin.com/in/piotr-jakubowski-aa0ba2137/">
+              <div><i class="fab fa-linkedin-in"></i></div>
+            </a>
+            <a href="https://github.com/gumis1153">
+              <div><i class="fab fa-github"></i></div>
+            </a>
+          </div>
+          <a
+            href="./assets/cv.pdf"
+            class="app-btn app-btn--bgc app-btn--primary"
+          >
+            See my resume
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer><p>2020 | Designed and developed by piotrjakubowski.pl</p></footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
