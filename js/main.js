@@ -1,8 +1,6 @@
 const mobileBtn = document.querySelector('.mobile-nav-btn');
 
-const elementsToMove = document.querySelectorAll(
-  '#home header .mobile-nav-btn div'
-);
+const elementsToMove = document.querySelectorAll('#home header .mobile-nav-btn div');
 
 mobileBtn.addEventListener('click', () => {
   document.querySelector('nav').classList.toggle('active');
@@ -11,6 +9,26 @@ mobileBtn.addEventListener('click', () => {
     i.classList.toggle('active');
   });
 });
+
+const iOS = () => {
+  var iDevices = [
+    'iPad',
+    'iPhone',
+    'iPod'
+  ];
+
+  if (!!navigator.platform) {
+    while (iDevices.length) {
+      if (navigator.platform === iDevices.pop()){ return true; }
+    }
+  }
+
+  return false;
+}
+
+if(!iOS()) {
+  document.querySelector('#home').style.backgroundAttachment = 'fixed';
+}
 
 const navBtns = Array.prototype.slice.call(document.querySelectorAll('button'));
 
@@ -68,14 +86,10 @@ window.addEventListener('scroll', () => {
   const hireMeSection = document.querySelector('section#hire-me');
   const apperaAnimation = 'animation: appear-primary 1.2s ease;';
 
-  let isAbout =
-    window.scrollY >= aboutSection.offsetTop - window.innerHeight / 1.5;
-  let isSkills =
-    window.scrollY >= skillsSection.offsetTop - window.innerHeight / 1.5;
-  let isPortfolio =
-    window.scrollY >= portfolioSection.offsetTop - window.innerHeight / 1.5;
-  let isHireMe =
-    window.scrollY >= hireMeSection.offsetTop - window.innerHeight / 1.5;
+  let isAbout = window.scrollY >= aboutSection.offsetTop - window.innerHeight / 1.5;
+  let isSkills = window.scrollY >= skillsSection.offsetTop - window.innerHeight / 1.5;
+  let isPortfolio = window.scrollY >= portfolioSection.offsetTop - window.innerHeight / 1.5;
+  let isHireMe = window.scrollY >= hireMeSection.offsetTop - window.innerHeight / 1.5;
 
   if (isAbout) {
     aboutSection.style = apperaAnimation;
